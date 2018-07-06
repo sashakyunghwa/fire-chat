@@ -1,11 +1,19 @@
-import React, { Component } from 'react';
+import 'materialize-css/dist/css/materialize.min.css';
 import '../assets/css/App.css';
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
+import Nav from './nav';
+import Home from './home';
+import Chat from './chat';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Fire Chat</h1>
+        <Nav />
+        <Route exact path="/" component={Home} />
+        <Route path="/chat" component={Chat} />
       </div>
     );
   }
