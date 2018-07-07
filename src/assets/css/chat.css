@@ -1,5 +1,19 @@
+.chat {
+    height: 85vh;
+    position: relative;
+}
+
 .chat .messages {
     font-size: 1.3em;
+    position: absolute;
+    bottom: 90px;
+    max-height: 60vh;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.chat .input-message {
+    width: 100%;
     position: absolute;
     bottom: 0;
 }
