@@ -1,0 +1,8 @@
+.app {
+    height: 92vh;
+    display: flex;
+}
+
+.vert-align {
+    margin: auto;
+}
